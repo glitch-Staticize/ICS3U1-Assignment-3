@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <script defer src="script.js"></script>  -->
+    <script defer src="script.js"></script> 
     <h1> Le Calculator</h1>
+
+    <!--Cosine Law-->
     <form>
         <h1>Cosine Law</h1>
-        <label for="sideA">Side a:</label><br>
-        <input type="number" id="sideA" name="sideA"><br>
-        <label for="sideB">Side b:</label><br>
-        <input type="number" id="sideB" name="sideB">
-        <label for="angleC">Angle C:</label><br>
-        <input type="number" id="angleC" name="angleC">
+        <label for="sideA">Side a:</label>
+        <input type="number" id="sideA">
+        <label for="sideB">Side b:</label>
+        <input type="number" id="sideB">
+        <label for="angleC">Angle C:</label>
+        <input type="number" id="angleC">
 
-        <label for="sideC">Side c:</label><br>
-        <input type="number" id="sideC" name="sideC" readonly>
-        <input type="submit" value="Calculate">
+        <p> Side C: <span id="cosineResult"></span></p>
+        <button id="calculateCosine">Calculate </button>
     </form>
 
+     <!--Asymptote Finder-->
     <form>
         <h1>Asymptote Finder</h1>
         <label for="mValue">m Value:</label><br>
@@ -33,9 +35,10 @@
 
         <label for="asymptoteType">Asymptote Type:</label><br>
         <input type="number" id="asymptoteType" name="asymptoteType" readonly>
-        <input type="submit" value="Calculate">
+        <button id="calculateAsymptote">Calculate </button>
     </form>
-    
+
+    <!-- Gregory-Leibniz Pi Approximation -->
     <form>
         <h1>Gregory-Leibniz Pi Approximation</h1>
         <label for="nValue2">n Value:</label><br>
@@ -46,5 +49,4 @@
         <input type="submit" value="Calculate">
     </form>
 </body>
-
 </html>
